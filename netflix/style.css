@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url(images1.jpg) no-repeat center/cover;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: red;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+}
+
+.signin {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.email-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.email-box input {
+    padding: 10px;
+    width: 280px;
+}
+
+.email-box button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* MOVIES */
+.movies {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.movies img {
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.movies img:hover {
+    transform: scale(1.1);
+}
+
+/* FEATURES */
+.features {
+    padding: 40px 20px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* FAQ */
+.faq {
+    padding: 40px 20px;
+}
+
+.question {
+    background: #333;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
